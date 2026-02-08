@@ -1,7 +1,5 @@
 {
   "version": 2,
   "regions": ["sfo1", "hnd1", "icn1", "cdg1", "sin1"],
-  "rewrites": [
-    { "source": "/proxy", "destination": "/api/index" }
-  ]
+  "rewrites": [{ "source": "/api/(.*)", "destination": "/api/index.js" }]
 }
